@@ -1,0 +1,27 @@
+{
+  "name": "Sanjeevani",
+  "version": "1.0.0",
+  "description": "A E-commerce website.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "braintree": "^3.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.6.0",
+    "express": "^5.0.0",
+    "i": "^0.3.6",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^5.9.27",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^2.0.4",
+    "npm": "^10.8.3"
+  }
+}

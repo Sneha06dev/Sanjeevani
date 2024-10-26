@@ -1,0 +1,28 @@
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 75%; /* 75% of the container's width */
+  max-height: 15px; /* Limit height to a specific value */
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px; /* Thumb width */
+  height: 18px; /* Thumb height */
+  border-radius: 50%; /* Make the thumb circular */
+  background: #b7791f;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 18px; /* Thumb width */
+  height: 18px; /* Thumb height */
+  border-radius: 50%; /* Make the thumb circular */
+  background: #b7791f;
+  cursor: pointer;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantTherapy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add styles for the shop button */
+        .shop-button {
+            position: absolute; /* Position it absolutely within the body */
+            top: 20px; /* Distance from the top */
+            left: 20px; /* Distance from the left */
+            background-color: #ffffff; /* Bootstrap primary color */
+            color: rgb(5, 5, 5);
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            text-decoration: none; /* Remove underline */
+            font-size: 16px; /* Adjust font size */
+        }
+        .shop-button:hover {
+            background-color: #5f7388; /* Darker blue on hover */
+        }
+        /* Styles for the chatbot subtitle */
+        .chatbot-title {
+            font-size: 18px; /* Smaller font size for the chatbot title */
+            margin-top: 7px; /* Margin from the main title */
+            color: #ffffff; /* Dark color for visibility */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h2 class="title">PlantTherapy</h2>
+        <h4 class="chatbot-title">Sanjeevani's AI Chatbot</h4> <!-- Added chatbot title -->
+        <h4 class="subtitle">How can I help you today?</h4>
+        
+        <!-- Add the Shop button -->
+        <a href="http://localhost:3000" class="shop-button">Shop</a>
+
+        <ul class="suggestion-list">
+            <li class="suggestion">
+                <h4 class="text">Hey, I’m looking to start a little herb garden in my kitchen. Any tips on what to grow and how to get started?</h4>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">I’ve got some annoying rashes on my skin. Are there any herbs that could help soothe them?</h4>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">I’m new to growing medicinal plants. What are some easy ones to start with that don’t need too much attention?</h4>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">What herbs can I use to boost my overall health and feel better daily?</h4>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">Do you have any suggestions for plants that can help with common cold symptoms? I’d love to have some remedies at home.</h4>
+            </li>  
+        </ul>
+        
+        <div class="chatlist">
+            <!-- Your chat list content here -->
+        </div>
+
+        <div class="typing-area">
+            <form action="#" class="typing_form">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Looking for plant or health advice? Ask me!" class="taking-input" required>
+                    <button class="material-symbols-rounded">send</button>
+                </div>
+            </form>
+            <p class="disclaimer-text">PlantTherapy may display inaccurate info as it is solely based on GeminiAI</p>
+            <p class="developer_name">Designed & Developed by : Sneha Rastogi</p>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>

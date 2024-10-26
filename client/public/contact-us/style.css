@@ -1,0 +1,79 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background with green and white diagonal gradient */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0f7e9 0%, #d3f5ce 50%, #baf1a7 100%);
+    color: #333;
+    padding: 40px;
+}
+
+/* Center the main content and apply padding */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h1 {
+    color: #2e8b57;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Introduction text styling */
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Styling for each nursery card */
+.nursery-card {
+    background-color: #fff;
+    border: 2px solid #8fbc8f;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for nursery cards */
+.nursery-card:hover {
+    background-color: #2e8b57;
+    color: white;
+    border-color: #2e8b57;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading inside each nursery card */
+.nursery-card h2 {
+    font-size: 24px;
+    color: #2e8b57;
+    margin-bottom: 10px;
+}
+
+/* Phone number styling */
+.nursery-card p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Change text color on hover */
+.nursery-card:hover h2,
+.nursery-card:hover p {
+    color: white;
+}

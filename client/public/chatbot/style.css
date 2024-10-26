@@ -1,0 +1,192 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #006400, #FFFFFF); /* Dark green to white gradient */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Vertical space between header and input area */
+    min-height: 100vh; /* Ensure minimum height of viewport */
+    margin: 0;
+    margin-bottom: 0;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.header .title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Suggestion list styles */
+.suggestion-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    gap: 20px; /* Adjust the gap between cards */
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%; /* Full width of the viewport */
+    box-sizing: border-box;
+}
+
+.suggestion {
+    width: 200px; /* Fixed width to create square shape */
+    height: 200px; /* Fixed height to create square shape */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(54, 50, 50);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestion:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Increased box shadow on hover */
+}
+
+.text {
+    font-size: 1rem;
+    color: black; /* Set text color to black */
+}
+
+/* Typing area styles */
+.typing-area {
+    background: transparent; /* Transparent background for typing area */
+    padding: 20px;
+    width: 100%; /* Full width of the viewport */
+    box-sizing: border-box;
+    align-self: flex-end; /* Align at the bottom of the viewport */
+}
+
+.typing_form {
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper {
+    flex: 1;
+    display: flex;
+}
+
+.taking-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+.icon.materials-symbols-rounded {
+    background-color: #fff;
+    color: #006400;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.icon.materials-symbols-rounded:hover {
+    background-color: #eee;
+}
+
+.developer_name {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 10px; /* Adjust top margin */
+    margin-bottom: -19px; /* Adjust bottom margin */
+    color: #fff; /* White text color */
+    background: linear-gradient(to bottom, #262422, #4a3232);/* Black background color */
+    padding: 10px; /* Padding around the text */
+    width: 100%; /* Full width */
+    box-sizing: border-box;
+}
+
+.disclaimer-text {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 10px; /* Adjust top margin */
+    margin-bottom: 20px; /* Adjust bottom margin */
+    color: #666;
+}
+.hide-header .header {
+    display: none;
+}
+.messageoutgoing {
+    justify-content: flex-end;
+}
+
+.messageincoming {
+    justify-content: flex-start;
+}
+
+.message-content {
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.messageoutgoing .avatar,
+.messageincoming .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    
+}
+
+.messageoutgoing .chatting,
+.messageincoming .chatting {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+    max-width: 70%;
+    text-align: left;
+}
+.chatting {
+    margin: 10px 0;
+    line-height: 1;
+    overflow-y: auto;
+}
+
+.chatting strong {
+    font-weight: bold;
+}
+
+.chatting em {
+    font-style: italic;
+}

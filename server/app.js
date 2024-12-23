@@ -61,6 +61,9 @@ app.use(cors());
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.send("Back-end API is running. Front-end not deployed yet.");
+});
 
 // Routes
 app.use("/api", authRouter);

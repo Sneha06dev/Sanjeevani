@@ -8,7 +8,7 @@ const ForgotPasswordModal = ({ isOpen, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8000/api/send-reset-link", { email });
+      const response = await axios.post( "https://sanjeevani-7q5r.onrender.com/api/send-reset-link", { email });
       setMessage(response.data.message);
     } catch (error) {
       setMessage("Error sending reset link.");

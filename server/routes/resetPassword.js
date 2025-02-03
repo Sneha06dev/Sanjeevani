@@ -2,9 +2,14 @@ const express = require('express');
 const router = express.Router();
 const userModel = require('../models/users');
 const bcrypt = require('bcryptjs');
-const path = require('path'); // Ensure this is imported
 
-// Handle password reset request
+// ✅ Serve Reset Password Page from Frontend
+router.get('/reset-password/:token', (req, res) => {
+    const { token } = req.params;
+    return res.redirect(`https://sanjeevani-wine.vercel.app/reset-password/${token}`);
+});
+
+// ✅ Handle Password Reset Request
 router.post('/reset-password', async (req, res) => {
     const { token, newPassword } = req.body;
 
@@ -18,7 +23,9 @@ router.post('/reset-password', async (req, res) => {
             return res.status(400).json({ message: 'Invalid or expired token' });
         }
 
-        user.password = bcrypt.hashSync(newPassword, 10);
+        // Securely hash the new password
+        const hashedPassword = await bcrypt.hash(newPassword, 10);
+        user.password = hashedPassword;
         user.resetPasswordToken = undefined;
         user.resetPasswordExpires = undefined;
         await user.save();
@@ -28,12 +35,6 @@ router.post('/reset-password', async (req, res) => {
         console.error(error);
         res.status(500).json({ message: 'Error resetting password' });
     }
-});
-
-// Serve the reset password HTML file
-router.get('/reset-password/:token', (req, res) => {
-    const filePath = path.join(__dirname, '../public/resetPassword.html');
-    res.sendFile(filePath);
 });
 
 module.exports = router;

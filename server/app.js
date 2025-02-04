@@ -78,7 +78,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.get('/reset-password/:token', (req, res) => {
 //   res.sendFile(path.join(__dirname, 'public', 'reset-password.html'));
 // });
-app.get('test-reset', (req, res) => {
+app.get('/test-reset', (req, res) => {
   res.sendFile(path.join(__dirname, 'reset-password.html'));  // Serve the HTML file directly
 });
 app.use('/api', resetPasswordRoutes);

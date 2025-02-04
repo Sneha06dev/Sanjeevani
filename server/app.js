@@ -58,7 +58,7 @@ mongoose
 app.use(morgan("dev"));
 app.use(cookieParser());
 app.use(cors());
-app.use(express.static("public"));
+// app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 // app.get("/", (req, res) => {
@@ -73,7 +73,8 @@ app.use("/api/product", productRouter);
 app.use("/api", brainTreeRouter);
 app.use("/api/order", orderRouter);
 app.use("/api/customize", customizeRouter);
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));  // Serve static files from the current directory
 
 // app.get('/reset-password/:token', (req, res) => {
 //   res.sendFile(path.join(__dirname, 'public', 'reset-password.html'));

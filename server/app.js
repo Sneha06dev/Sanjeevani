@@ -76,12 +76,12 @@ app.use("/api/customize", customizeRouter);
 // app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname));  // Serve static files from the current directory
 
-// app.get('/reset-password/:token', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'public', 'reset-password.html'));
-// });
-app.get('/test-reset', (req, res) => {
-  res.sendFile(path.join(__dirname, 'reset-password.html'));  // Serve the HTML file directly
+app.get('/reset-password/:token', (req, res) => {
+  res.sendFile(path.join(__dirname, 'reset-password.html'));
 });
+// app.get('/test-reset', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'reset-password.html'));  // Serve the HTML file directly
+// });
 app.use('/api', resetPasswordRoutes);
 // Run Server
 const PORT = process.env.PORT || 8000;

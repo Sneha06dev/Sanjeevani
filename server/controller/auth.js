@@ -159,7 +159,7 @@ class Auth {
       await user.save();
 
       // Create reset link
-     const resetLink = `https://sanjeevani-wine.vercel.app/reset-password/${token}`;
+     const resetLink = `https://sanjeevani-7q5r.onrender.com/reset-password/${token}`;
 
 
       await resetEmail(user.email, resetLink);

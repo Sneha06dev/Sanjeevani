@@ -17,6 +17,10 @@ Explore a wide range of botanical offerings including:
 - **Kitchen Garden Plants**: Grow your own fresh produce with our selection of kitchen garden plants.
 - **Woods and Timber**: Source sustainably harvested woods and timber for various projects.
 
+### Forgot Password Facility via Nodemailer
+
+Easily reset your password with our secure Nodemailer-powered email service. If you forget your password, simply request a reset, and you'll receive a secure link in your email. Follow the link to set a new password and regain access to your account hassle-free.
+
 ### Payment Gateway Integration
 
 Enjoy seamless and secure transactions with our integrated Braintree payment gateway. Whether you're purchasing rare herbs or planning a garden overhaul, you can trust that your payments are processed with industry-leading security standards.

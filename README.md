@@ -1,6 +1,6 @@
 # Sanjeevani
 
-Welcome to Sanjeevani, your ultimate marketplace for herbs, medicinal plants, kitchen garden plants, woods, and more! GreenPetals aims to provide a comprehensive platform where enthusiasts and experts alike can discover, purchase, and learn about a diverse array of botanical treasures.
+Welcome to Sanjeevani, your ultimate marketplace for herbs, medicinal plants, kitchen garden plants, woods, and more! Sanjeevani aims to provide a comprehensive platform where enthusiasts and experts alike can discover, purchase, and learn about a diverse array of botanical treasures.
 
 
 https://github.com/user-attachments/assets/6463ecf9-02ea-4762-bdf9-95a8e11d026f

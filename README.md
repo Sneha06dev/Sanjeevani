@@ -3,8 +3,7 @@
 Welcome to Sanjeevani, your ultimate marketplace for herbs, medicinal plants, kitchen garden plants, woods, and more! Sanjeevani aims to provide a comprehensive platform where enthusiasts and experts alike can discover, purchase, and learn about a diverse array of botanical treasures.
 
 
-https://github.com/user-attachments/assets/6463ecf9-02ea-4762-bdf9-95a8e11d026f
-
+## View Live Project : https://youtu.be/P8mfcUT-0kw
 
 
 ## Features
@@ -30,7 +29,6 @@ Enjoy seamless and secure transactions with our integrated Braintree payment gat
 Effortlessly find the products you're looking for using our intuitive search and powerful filtering options. Filter by plant name, price and more to quickly narrow down your choices.
 
 
-https://github.com/user-attachments/assets/71ca8591-4d11-4dab-82a5-595d7f5ef6cc
 
 
 ### Admin Panel
